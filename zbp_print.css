@@ -1,0 +1,101 @@
+@charset "utf-8";
+/*
+   CIS1350 - Final Project
+   
+   Zaleski Backpacking Print Style Sheet
+   
+   Author: Tony Benincasa  
+   Date: 12/4/23 
+   Filename: zbp_print.css 
+
+*/
+
+
+
+/* Hidden Objects */
+
+article > figure, nav, aside, footer {
+    display: none;
+}
+
+/* Page Box Styles */
+
+@page {
+    size: 8.5in 11in;
+    margin: 0.5in;
+}
+
+/* Header Styles */
+
+body > header {
+   text-align: right;
+}
+
+body > header > img {
+   display: block;
+   width: 100%;
+}
+
+
+/* Typography Styles */
+
+h1 {
+    font-size: 14pt;
+    line-height: 15pt;
+    margin: 0.3in 0in 0.2in;
+}
+
+h2 {
+    font-size: 10pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+}
+
+p {
+    font-size: 12pt;
+    margin: 0.1in 0in 0.1in 0.3in;
+}
+
+/* List Styles */
+
+
+
+/* Image Styles */
+
+article img {
+    border: 2px solid rgb(191,191,191);
+    display: block;
+    margin: 0.25in auto;
+    width: 65%;
+}
+
+
+/* Hypertext Styles */
+
+a {
+    color: black;
+    text-decoration: none;
+}
+
+a::after {
+    content: " (" attr(href) ") ";
+    font-weight: bold;
+    word-wrap: break-word;
+}
+
+
+/* Page Break Styles */
+
+article:nth-of-type(n+2) {
+    page-break-before: always;
+}
+
+img, ol, ul {
+    page-break-inside: avoid;
+}
+	
+
+p {
+    orphans: 3;
+    widows: 3;
+}
+
