@@ -1,0 +1,175 @@
+<!DOCTYPE html>
+<html lang="en">
+
+<head>
+   <!--
+   CIS1350 - Final Project
+   
+   Contact Us Page of Zaleski Backpacking website
+   Author: Tony Benincasa 
+   Date: 12/3/23  
+   
+   Filename: zbp_contactus.html
+   -->
+
+   <title>Zaleski Backpacking</title>
+   <meta charset="utf-8" />
+   <meta name="viewport" content="width=device-width, initial-scale=1" />
+   <link href="css/zbp_reset.css" rel="stylesheet" />
+   <link href="css/zbp_styles1.css" rel="stylesheet" />
+   <link href="css/zbp_print.css" rel="stylesheet" media="print"/>
+</head>
+
+<body>
+   <header>
+      <img src="images/zbp_wetsocks.jpg" alt="Wet Socks" />
+
+      <nav class="horizontal">
+         <ul class="mainmenu">
+            <li><a href="zbp_home.html">Home</a></li>
+            <li><a href="zbp_trips.html">Our Trips</a></li>
+            <li><a href="zbp_packing.html">Packing</a></li>
+            <li><a href="zbp_links.html">Our Fav Links</a></li>
+            <li><a href="zbp_contactus.html">Contact Us</a> </li>
+         </ul>
+      </nav>
+   </header>
+
+   <section>
+      <nav>
+         <h1>Our Favorite Links/Videos</h1>
+         <ol>
+            <li><a href="https://ohiodnr.gov/go-and-do/plan-a-visit/find-a-property/zaleski-state-forest">Zaleski State Forest</a></li>
+            <li><a href="https://ohiodnr.gov/static/documents/forestry/maps/zaleski_backpack.pdf">Cool Trail Map</a></li>
+            <li><a href="https://www.youtube.com/shorts/mbheKW5O-KQ">Roger at Zaleski</a></li>
+            <li><a href="https://www.youtube.com/results?search_query=zaleski+state+forest+backpacking">YouTube Search Zaleski</a></li>
+         </ol>
+      </nav>
+      
+      <form id="advice" action="http://www.example.com/zbd/advice" method="post">
+         <h1>Advice, Comments, Any Input at All!</h1>
+         <p>We're still kind of new at this so we'll take any advice.
+         If you have any to offer please submit below.</p>
+         <p>Required values are marked by an asterisk (*)</p>
+        <fieldset id="viewerInfo">
+            <legend>Viewer Information</legend>
+            <div class="formRow">
+                <label for="name">Name*</label>
+                <input name="name" id="name" type="text" placeholder="first name only" required />
+            </div>
+            <div class="formRow">
+                <label for="mail">E-mail*</label>
+                <input name="viewerEmail" id="mail" type="email" required />
+            </div>
+            <div class="formRow">
+               <label for="phone">Phone number</label>
+               <input name="viewerPhone" id="phone" type="tel" placeholder="(nnn) nnn-nnnn" pattern="^\d{10}$|^(\(\d{3}\)\s*)?\d{3}[\s-]?\d{4}$" />
+           </div>
+            <label for="commBox">Tell us about your experiences! <br /></label>
+            <textarea name="viewerExp" id="commBox"></textarea>
+         </fieldset>
+         <fieldset id="source"
+            <div class="formRow">
+               <label for="info">Where did you hear about us? (select all that apply) <br />
+               </label>
+               <fieldset class="optGroup">
+                  <input name="infoSrc" id="internet" type="checkbox" />
+                  <label for="internet">Internet</label>
+                  <input name="infoSrc" id="WoM" type="checkbox" />
+                  <label for="WoM">Word of Mouth</label>
+                  <input name="infoSrc" id="Other" type="checkbox" />
+                  <label for="Other">Other</label>
+                  <label for="styleCommBox"><br /><br />If Other, tell us about it! <br /></label>
+                  <textarea name="viewerStyleExp" id="styleCommBox"></textarea>
+               </fieldset>
+            </div>
+            <div class="formRow">
+               <label for="campingPref"><br />What kind of camping do you like? (select all that apply) <br />
+               <fieldset class="optGroup">
+                  <input name="campingPref" id="primitive" type="checkbox" />
+                  <label for="primitive">Primitive</label></label>
+                  <input name="campingPref" id="Glamping" type="checkbox" />
+                  <label for="Glamping">Glamping</label>
+                  <input name="campingPref" id="all" type="checkbox" />
+                  <label for="all">All</label>
+                  <input name="campingPref" id="primitive" type="checkbox" />
+                  <label for="primitive">Primitive</label>
+                  <input name="campingPref" id="Other" type="checkbox" />
+                  <label for="Other">Other</label>
+                  <label for="styleCommBox"><br /><br />If Other, tell us about it! <br /></label>
+                  <textarea name="viewerStyleExp" id="styleCommBox"></textarea>
+               </fieldset>
+            </div>
+            <div class="formRow">
+               <label for="campingFreqQ"><br />How many times do you go camping in a typical year? <br />
+               </label>
+               <fieldset class="optGroup">
+                  <input name="campingFreqQ" id="1-2" type="checkbox" />
+                  <label for="1-2">Once or Twice</label>
+                  <input name="campingFreqQ" id="3-4" type="checkbox" />
+                  <label for="3-4">3 or 4 times</label>
+                  <input name="campingFreqQ" id="5orMore" type="checkbox" />
+                  <label for="5orMore">5 or More</label>
+               </fieldset>
+            </div>
+        </fieldset>
+        <fieldset id="moreQuestions">
+            <legend>If you could only chose one ...</legend>
+            <div class="formRow">
+               <label>Favorite Season?</label>
+               <fieldset class="optGroup">
+                  <label for="fspring">Spring</label>
+                  <input name="sSeason" id="fspring" value="yes" type="radio" />
+                  <label for="fsummer">Summer</label>
+                  <input name="sSeason" id="fsummer" value="yes" type="radio" />
+                  <label for="ffall">Fall</label>
+                  <input name="sSeason" id="ffall" value="yes" type="radio" />
+                  <label for="fwinter">Winter</label>
+                  <input name="sSeason" id="fwinter" value="yes" type="radio" />
+               </fieldset>
+            </div>
+            <div class="formRow">
+               <label>What kind of shelter do you prefer?</label>
+               <fieldset class="optGroup">
+                  <label for="fhammock">Hammock</label>
+                  <input name="fShelter" id="fhammock" value="yes" type="radio" />
+                  <label for="ftent">Tent</label>
+                  <input name="fShelter" id="ftent" value="yes" type="radio" />
+               </fieldset>
+            </div>
+            <div class="formRow">
+               <label>Have you ever backpack camped more than a week?</label>
+               <fieldset class="optGroup">
+                  <label for="wYes">Yes</label>
+                  <input name="sWeek" id="wYes" value="yes" type="radio" />
+                  <label for="wNo">No</label>
+                  <input name="sWeek" id="wNo" value="no" type="radio" />
+               </fieldset>
+            </div>
+        </fieldset>
+        <div id="buttons">
+         <input type="submit" value="Submit My Survey" />
+         <input type="reset" value="Reset" />
+        </div>
+      </form>
+
+      <aside>
+         <blockquote>
+            <p>"It's obvious a lot of people backpack in Zaleski, but most people I mention it
+               to have never heard of it. I actually found it by accident. I was Googling for 
+               information on bike trails."</p>
+            <p>&mdash; Tony</p>
+         </blockquote>
+         <blockquote>
+            <p>"The Moonville Tunnel is one of my favorite spots."</p>
+            <p>&mdash; Denise</p>
+         </blockquote>
+      </aside>
+   </section>
+
+   <footer>
+      Tony & Denise &#8226; 123 Sesame Street, Boston, MA &#8226; <a href="tel:+15558675309">(555) 867-5309</a></p><br /> <a href="mailto:tonydenisecamp@example.com">tonydenisecamp@example.com</a></p>
+   </footer>
+</body>
+
+</html>
